@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIET Coimbatore - Admission Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background: #f7f7f7;
+        }
+        .container {
+            width: 70%;
+            margin: auto;
+            background: white;
+            padding: 20px 40px;
+            border-radius: 8px;
+            box-shadow: 0px 2px 8px #ccc;
+        }
+        h2, h3 {
+            text-align: center;
+            color: #003399;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 6px 0 15px 0;
+            border: 1px solid #888;
+            border-radius: 5px;
+        }
+        .row {
+            display: flex;
+            gap: 20px;
+        }
+        .col {
+            flex: 1;
+        }
+        button {
+            background: #003399;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+        }
+        button:hover {
+            background: #002070;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>CIET - COIMBATORE INSTITUTE OF ENGINEERING AND TECHNOLOGY</h2>
+    <h3>Admission Application Form</h3>
+
+    <form>
+
+        <h3>1. Course Applying For</h3>
+        <label>Select Course</label>
+        <select>
+            <option>B.E / B.Tech</option>
+            <option>M.E / M.Tech</option>
+            <option>MBA</option>
+            <option>Other</option>
+        </select>
+
+        <div class="row">
+            <div class="col">
+                <label>Branch Preference 1</label>
+                <input type="text">
+            </div>
+            <div class="col">
+                <label>Branch Preference 2</label>
+                <input type="text">
+            </div>
+        </div>
+
+        <h3>2. Applicant Details</h3>
+        <label>Full Name</label>
+        <input type="text">
+
+        <div class="row">
+            <div class="col">
+                <label>Date of Birth</label>
+                <input type="date">
+            </div>
+            <div class="col">
+                <label>Gender</label>
+                <select>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Other</option>
+                </select>
+            </div>
+        </div>
+
+        <label>Nationality</label>
+        <input type="text">
+
+        <label>Religion</label>
+        <input type="text">
+
+        <label>Community</label>
+        <select>
+            <option>OC</option>
+            <option>BC</option>
+            <option>MBC</option>
+            <option>SC</option>
+            <option>ST</option>
+        </select>
+
+        <label>Caste</label>
+        <input type="text">
+
+        <label>Aadhaar Number</label>
+        <input type="text">
+
+        <h3>3. Contact Details</h3>
+        <label>Address</label>
+        <textarea rows="3"></textarea>
+
+        <div class="row">
+            <div class="col"><label>City</label><input type="text"></div>
+            <div class="col"><label>District</label><input type="text"></div>
+        </div>
+
+        <div class="row">
+            <div class="col"><label>State</label><input type="text"></div>
+            <div class="col"><label>Pincode</label><input type="text"></div>
+        </div>
+
+        <label>Mobile (Student)</label>
+        <input type="text">
+
+        <label>Mobile (Parent/Guardian)</label>
+        <input type="text">
+
+        <label>Email</label>
+        <input type="email">
+
+        <h3>4. Parent / Guardian Details</h3>
+
+        <label>Father's Name</label>
+        <input type="text">
+
+        <label>Occupation</label>
+        <input type="text">
+
+        <label>Mother's Name</label>
+        <input type="text">
+
+        <label>Occupation</label>
+        <input type="text">
+
+        <h3>5. Educational Qualification</h3>
+
+        <label>SSLC / 10th Details</label>
+        <textarea placeholder="School Name, Board, Year, Percentage" rows="3"></textarea>
+
+        <label>HSC / 12th Details</label>
+        <textarea placeholder="School Name, Board, Year, Marks, Percentage" rows="3"></textarea>
+
+        <label>Diploma (if applicable)</label>
+        <textarea placeholder="Course, Institution, Board, Year, Percentage" rows="3"></textarea>
+
+        <h3>6. Entrance Exam Details</h3>
+        <label>TNEA Application No / Rank</label>
+        <input type="text">
+
+        <label>TANCET / CET Score</label>
+        <input type="text">
+
+        <h3>7. Documents Attached</h3>
+        <textarea placeholder="List the documents you are submitting (e.g., Marksheet, TC, Photos, Aadhaar, etc.)" rows="4"></textarea>
+
+        <h3>8. Declaration</h3>
+        <p>I hereby declare that the information provided is true to the best of my knowledge.</p>
+
+        <button type="submit">Submit Application</button>
+    </form>
+
+</div>
+
+</body>
+</html>
